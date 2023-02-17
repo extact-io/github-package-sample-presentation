@@ -8,7 +8,7 @@
 	</parent>
 	<artifactId>github-packages-sample-console</artifactId>
 	<packaging>jar</packaging>
-	<name>github-packages-sample-service</name>
+	<name>github-packages-sample-console</name>
 	<repositories>
 		<repository>
 			<id>github</id>
