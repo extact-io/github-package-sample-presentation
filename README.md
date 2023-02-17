@@ -1,1 +1,1 @@
-# github-package-sample-webapi
+# github-package-sample-console
