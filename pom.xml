@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>io.extact</groupId>
+		<artifactId>github-packages-sample-parenet</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>../github-packages-sample-parenet/pom.xml</relativePath>
+	</parent>
+	<artifactId>github-packages-sample-console</artifactId>
+	<packaging>jar</packaging>
+	<name>github-packages-sample-service</name>
+	<repositories>
+		<repository>
+			<id>github</id>
+			<name>GitHub Apache Maven Packages</name>
+			<url>https://maven.pkg.github.com/extact-io/github-packages-sample-registry</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+	<dependencies>
+		<dependency>
+			<groupId>io.extact</groupId>
+			<artifactId>github-packages-sample-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>3.1.0</version>
+				<configuration>
+					<mainClass>sample.HelloConsole</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
