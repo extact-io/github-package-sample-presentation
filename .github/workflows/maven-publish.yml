@@ -22,7 +22,10 @@ jobs:
         server-password: REPOSITORY_SERVER_PASSWORD
         settings-path: ${{ github.workspace }}
 
-    - name: TEST
+    - name: TEST1
+      run: cat $GITHUB_WORKSPACE/toolchains.xml
+
+    - name: TEST2
       run: cat $GITHUB_WORKSPACE/settings.xml
 
     - name: Publish to GitHub Packages Apache Maven
