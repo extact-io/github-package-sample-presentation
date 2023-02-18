@@ -2,9 +2,9 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>io.extact</groupId>
-		<artifactId>github-packages-sample-parenet</artifactId>
+		<artifactId>github-packages-sample-parent-pom</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath>../github-packages-sample-parenet/pom.xml</relativePath>
+		<relativePath>../github-packages-sample-parent-pom/pom.xml</relativePath>
 	</parent>
 	<artifactId>github-packages-sample-console</artifactId>
 	<packaging>jar</packaging>
